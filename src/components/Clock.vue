@@ -32,7 +32,7 @@ export default {
       this.hours = hours;
       this.minutes = minutes;
       this.seconds = seconds;
-      this.date = format(dateObject, 'eeee eo LLLL yyyy', { locale: enGB });
+      this.date = format(dateObject, 'eeee do LLLL yyyy', { locale: enGB });
     },
   },
   computed: {

@@ -1,6 +1,6 @@
 <template>
     <section class="flexBasic flex-wrap">
-        <a v-for="link in links" :key="link.name" :href="link.link" target="_blank">
+        <a v-for="link in links" :key="link.name" :href="link.link">
             <div class="p-8 text-2xl m-5 card text-center themeText flexBasic">
                 <h3>{{link.name}}</h3>
             </div>
