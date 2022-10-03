@@ -22,7 +22,7 @@ export default {
         { name: 'E-Mail', link: 'https://outlook.office.com/mail/' },
         { name: 'Calendar', link: 'https://calendar.google.com/calendar/' },
         { name: 'Societies', link: 'https://lincolnsu.com/activities/sports-and-societies' },
-
+        { name: 'Notion', link: 'https://www.notion.so/' },
       ],
     };
   },
