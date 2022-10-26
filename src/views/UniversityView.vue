@@ -23,6 +23,7 @@ export default {
         { name: 'Calendar', link: 'https://calendar.google.com/calendar/' },
         { name: 'Societies', link: 'https://lincolnsu.com/activities/sports-and-societies' },
         { name: 'Notion', link: 'https://www.notion.so/' },
+        { name: 'OneDrive', link: 'https://onedrive.live.com/about/en-gb/signin/'}
       ],
     };
   },
