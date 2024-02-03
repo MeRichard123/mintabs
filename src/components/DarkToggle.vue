@@ -1,5 +1,5 @@
 <template>
-  <button @click="toggleDarkMode" class="dark-mode">Toggle</button>
+  <button type="button" @click="toggleDarkMode" class="dark-mode dark:text-white">Toggle</button>
 </template>
 
 <script>

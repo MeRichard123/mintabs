@@ -5,14 +5,16 @@
       <router-link to="/personal">Personal</router-link>
     </nav>
     <Clock />
-    <DarkToggle/>
-    <router-view/>
+    <DarkToggle />
+    <SearchBar />
+    <router-view />
   </section>
 </template>
 
 <script>
 import Clock from './components/Clock.vue';
 import DarkToggle from './components/DarkToggle.vue';
+import SearchBar from './components/SearchBar.vue';
 
 export default {
   // watch routes and edit the title accordingly without helmet.
@@ -20,6 +22,7 @@ export default {
   components: {
     Clock,
     DarkToggle,
+    SearchBar,
   },
   watch: {
     $route(to) {
@@ -51,6 +54,12 @@ export default {
   .flexBasic{
     @apply flex items-center justify-center
   }
+  .card-dark {
+      width: 220px;
+      height: 220px;
+      box-shadow: none;
+      background-color: #1c1b1b;
+    }
 }
 
 nav {
@@ -59,10 +68,16 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #425f7b;
 }
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.flex-width {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 70vw;
 }
 </style>
