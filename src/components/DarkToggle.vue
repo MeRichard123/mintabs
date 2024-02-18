@@ -8,7 +8,17 @@ export default {
   methods: {
     toggleDarkMode() {
       document.querySelector('html').classList.toggle('dark');
+      if (localStorage.getItem('dark')) {
+        localStorage.removeItem('dark');
+      } else {
+        localStorage.setItem('dark', 'true');
+      }
     },
+  },
+  mounted() {
+    if (localStorage.getItem('dark')) {
+      document.querySelector('html').classList.add('dark');
+    }
   },
 };
 </script>
